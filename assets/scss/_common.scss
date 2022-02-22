@@ -1,0 +1,47 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+html,
+body {
+  touch-action: manipulation;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  font-family: $font-main;
+}
+
+ul, p {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $dusty-pink;
+
+  &:focus,
+  &:visited,
+  &:hover {
+    color: $dusty-pink;
+  }
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus,
+  &:visited,
+  &:hover {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+}
